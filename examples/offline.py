@@ -11,7 +11,7 @@ from __future__ import annotations
 
 import json
 
-from toolloop import Budget, Completion, ToolCall, run, tool
+from budgetloop import Budget, Completion, ToolCall, run, tool
 
 PRICES = {"SE0000108656": 118.4, "SE0000148884": 236.0}
 

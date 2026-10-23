@@ -2,8 +2,8 @@ from typing import Literal
 
 import pytest
 
-from toolloop import Toolbox, as_tool, tool
-from toolloop.errors import ArgumentError, ToolError
+from budgetloop import Toolbox, as_tool, tool
+from budgetloop.errors import ArgumentError, ToolError
 
 
 @tool

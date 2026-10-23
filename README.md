@@ -1,4 +1,4 @@
-# toolloop
+# budgetloop
 
 The tool-calling loop, written out: schemas from type hints, parallel calls, budgets
 and a trace. No dependencies.
@@ -10,7 +10,7 @@ stops asking — handled where you can see them.
 ## The shape of it
 
 ```python
-from toolloop import Budget, tool, run
+from budgetloop import Budget, tool, run
 
 
 @tool

@@ -38,7 +38,7 @@ def tool(
 
     def wrap(fn: Callable[..., Any]) -> Callable[..., Any]:
         schema = build(fn, name=name, description=description)
-        fn.__toolloop__ = Tool(  # type: ignore[attr-defined]
+        fn.__budgetloop__ = Tool(  # type: ignore[attr-defined]
             name=schema["name"],
             description=schema["description"],
             schema=schema,
@@ -53,7 +53,7 @@ def tool(
 
 def as_tool(function: Callable[..., Any]) -> Tool:
     """Get the Tool behind a decorated function, or build one on the spot."""
-    existing = getattr(function, "__toolloop__", None)
+    existing = getattr(function, "__budgetloop__", None)
     if isinstance(existing, Tool):
         return existing
     schema = build(function)

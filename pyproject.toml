@@ -3,7 +3,7 @@ requires = ["setuptools>=68"]
 build-backend = "setuptools.build_meta"
 
 [project]
-name = "toolloop"
+name = "budgetloop"
 version = "0.1.0"
 description = "The tool-calling loop, written out: schemas from type hints, parallel calls, budgets and a trace."
 readme = "README.md"
@@ -11,6 +11,10 @@ license = { text = "MIT" }
 requires-python = ">=3.10"
 authors = [{ name = "Christian Gregorcik" }]
 dependencies = []
+
+[project.urls]
+Homepage = "https://github.com/christian-gregorcik/budgetloop"
+Source = "https://github.com/christian-gregorcik/budgetloop"
 
 [project.optional-dependencies]
 dev = ["pytest>=8.0", "ruff==0.15.11"]

@@ -2,7 +2,7 @@ import time
 
 import pytest
 
-from toolloop import Budget, Completion, Message, Stop, Toolbox, ToolCall, run, tool
+from budgetloop import Budget, Completion, Message, Stop, Toolbox, ToolCall, run, tool
 
 
 @tool

@@ -2,9 +2,9 @@ from typing import Any, Literal, Optional, Union
 
 import pytest
 
-from toolloop import build_schema
-from toolloop.errors import SchemaError
-from toolloop.schema import describe
+from budgetloop import build_schema
+from budgetloop.errors import SchemaError
+from budgetloop.schema import describe
 
 
 def params(function):

@@ -2,7 +2,7 @@ import time
 
 import pytest
 
-from toolloop import Budget, Stop
+from budgetloop import Budget, Stop
 
 
 def test_a_fresh_budget_has_room():
