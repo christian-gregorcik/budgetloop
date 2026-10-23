@@ -56,7 +56,9 @@ def scripted_model(messages, tools):
     if step == 1:
         return Completion(
             content="One of those is unknown. Converting the one that resolved.",
-            tool_calls=(ToolCall(id="c", name="convert", arguments={"amount": "118.4", "rate": 0.091}),),
+            tool_calls=(
+                ToolCall(id="c", name="convert", arguments={"amount": "118.4", "rate": 0.091}),
+            ),
             cost_usd=0.0009,
         )
     return Completion(content="SE0000108656 is 118.40 SEK, about 10.77 USD.", cost_usd=0.0006)
@@ -75,5 +77,7 @@ if __name__ == "__main__":
             mark = "x" if call.failed else "-"
             print(f"  {mark} {call.call.name}({json.dumps(call.call.arguments)}) -> {call.result}")
     print()
-    print(f"stop={result.stop} tools={result.tool_calls} failed={result.failed_tool_calls} "
-          f"cost=${result.cost_usd:.4f}")
+    print(
+        f"stop={result.stop} tools={result.tool_calls} failed={result.failed_tool_calls} "
+        f"cost=${result.cost_usd:.4f}"
+    )
